@@ -722,6 +722,300 @@ body {
     text-align: center;
 }
 
+/* Global Schedule Section */
+.global-schedule {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.global-schedule h2 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.global-schedule-content {
+    padding: 2rem;
+}
+
+/* Year-Level WhatsApp Groups */
+.year-whatsapp-groups {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.year-whatsapp-groups h2 {
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.year-whatsapp-content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.year-group-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.year-group-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    min-width: 200px;
+    justify-content: center;
+}
+
+.year-group-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    background: linear-gradient(135deg, #20c55a 0%, #0f7a6b 100%);
+}
+
+.year-group-btn i {
+    font-size: 1.2rem;
+}
+
+/* Accordion Styles */
+.accordion-container {
+    margin-bottom: 2rem;
+}
+
+.accordion-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.accordion-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.accordion-header:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+.accordion-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.accordion-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background: #f8f9fa;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 2000px;
+    padding: 2rem;
+}
+
+/* Branch Accordion (for Year 2) */
+.branch-accordion {
+    margin-bottom: 1.5rem;
+}
+
+.branch-accordion .accordion-header {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.branch-accordion .accordion-header:hover {
+    background: linear-gradient(135deg, #e083eb 0%, #e5475c 100%);
+}
+
+.branch-accordion .accordion-header h3 {
+    font-size: 1.1rem;
+}
+
+/* Subject Content Grid */
+.subject-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.subject-content-single {
+    display: block;
+}
+
+/* Video Lessons Nested Accordion */
+.video-lessons-accordion {
+    margin-top: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.video-lessons-accordion .accordion-header {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+}
+
+.video-lessons-accordion .accordion-header:hover {
+    background: linear-gradient(135deg, #3d8bfe 0%, #00e6fe 100%);
+}
+
+.video-lessons-accordion .accordion-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.video-lessons-accordion .accordion-content {
+    padding: 1.5rem;
+    background: #f8f9fa;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.video-item {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.video-item h5 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1rem;
+}
+
+.video-item p {
+    margin: 0 0 1rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.video-container-small {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.video-container-small iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Video Section */
+.video-section {
+    grid-column: 1 / -1;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.video-section h3, .video-section h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 .grade-header h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -1126,6 +1420,48 @@ body {
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+    
+    .subject-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .video-container {
+        padding-bottom: 75%; /* Adjust for mobile */
+    }
+    
+    .accordion-header {
+        padding: 1rem 1.5rem;
+    }
+    
+    .accordion-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .accordion-item.active .accordion-content {
+        padding: 1.5rem;
+    }
+    
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .video-lessons-accordion .accordion-header {
+        padding: 0.8rem 1rem;
+    }
+    
+    .video-lessons-accordion .accordion-content {
+        padding: 1rem;
+    }
+    
+    .year-group-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .year-group-btn {
+        min-width: 250px;
+        padding: 0.8rem 1.5rem;
     }
 }
 

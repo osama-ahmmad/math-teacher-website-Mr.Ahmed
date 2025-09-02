@@ -31,6 +31,73 @@ document.querySelectorAll('.faq-question').forEach(question => {
     });
 });
 
+// Subject Accordion
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const accordionItem = header.parentElement;
+        const isActive = accordionItem.classList.contains('active');
+        
+        // Close all other accordion items in the same container
+        const container = accordionItem.closest('.accordion-container');
+        if (container) {
+            container.querySelectorAll('.accordion-item').forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+        
+        // Toggle current item
+        if (!isActive) {
+            accordionItem.classList.add('active');
+        }
+    });
+});
+
+// Branch Accordion (for nested accordions in Year 2)
+document.querySelectorAll('.branch-accordion .accordion-header').forEach(header => {
+    header.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent parent accordion from closing
+        
+        const accordionItem = header.parentElement;
+        const isActive = accordionItem.classList.contains('active');
+        
+        // Close other branch accordions in the same subject
+        const subjectContainer = accordionItem.closest('.accordion-content');
+        if (subjectContainer) {
+            subjectContainer.querySelectorAll('.branch-accordion .accordion-item').forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+        
+        // Toggle current item
+        if (!isActive) {
+            accordionItem.classList.add('active');
+        }
+    });
+});
+
+// Video Lessons Accordion (nested accordion for video content)
+document.querySelectorAll('.video-lessons-accordion .accordion-header').forEach(header => {
+    header.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent parent accordion from closing
+        
+        const accordionItem = header.parentElement;
+        const isActive = accordionItem.classList.contains('active');
+        
+        // Close other video lessons accordions in the same subject
+        const subjectContainer = accordionItem.closest('.accordion-content');
+        if (subjectContainer) {
+            subjectContainer.querySelectorAll('.video-lessons-accordion .accordion-item').forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+        
+        // Toggle current item
+        if (!isActive) {
+            accordionItem.classList.add('active');
+        }
+    });
+});
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

@@ -51,16 +51,17 @@
     <!-- Grade Content -->
     <section class="grade-content">
         <div class="container">
-            <!-- Schedule and Resources -->
-            <div class="content-grid">
-                <div class="schedule-card">
-                    <h2><i class="fas fa-calendar-alt"></i> الجدول الأسبوعي</h2>
+            <!-- Global Schedule -->
+            <div class="global-schedule">
+                <h2><i class="fas fa-calendar-alt"></i> الجدول الأسبوعي</h2>
+                <div class="global-schedule-content">
                     <table class="schedule-table">
                         <thead>
                             <tr>
                                 <th>اليوم</th>
                                 <th>الوقت</th>
                                 <th>المادة</th>
+                                <th>الموضوع</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -68,114 +69,289 @@
                                 <td>الأحد</td>
                                 <td>8:30 - 10:00</td>
                                 <td>التفاضل</td>
+                                <td>قوانين التفاضل</td>
                             </tr>
                             <tr>
                                 <td>الاثنين</td>
                                 <td>9:30 - 11:00</td>
                                 <td>التكامل</td>
+                                <td>قوانين التكامل</td>
                             </tr>
                             <tr>
                                 <td>الثلاثاء</td>
                                 <td>10:00 - 11:30</td>
                                 <td>الهندسة التحليلية</td>
+                                <td>معادلات الدوائر</td>
                             </tr>
                             <tr>
                                 <td>الأربعاء</td>
                                 <td>9:00 - 10:30</td>
                                 <td>الاحتمالات</td>
+                                <td>قوانين الاحتمالات</td>
                             </tr>
                             <tr>
                                 <td>الخميس</td>
                                 <td>8:30 - 10:00</td>
-                                <td>مراجعة وحل تمارين</td>
+                                <td>مراجعة</td>
+                                <td>حل تمارين</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+            </div>
 
-                <div class="resources-card">
-                    <h2><i class="fas fa-download"></i> المراجع والملخصات</h2>
-                    <div class="resource-item">
-                        <div>
-                            <h4>ملخص التفاضل والتكامل</h4>
-                            <p>قوانين التفاضل والتكامل الأساسية</p>
-                        </div>
-                        <a href="#" class="download-btn">
-                            <i class="fas fa-download"></i> تحميل
+            <!-- Year-Level WhatsApp Groups -->
+            <div class="year-whatsapp-groups">
+                <h2><i class="fab fa-whatsapp"></i> مجموعات الواتساب للسنة</h2>
+                <div class="year-whatsapp-content">
+                    <p>انضم إلى مجموعات الواتساب الخاصة بطلاب ثانية ثانوي</p>
+                    <div class="year-group-buttons">
+                        <a href="https://wa.me/966501234567" target="_blank" class="year-group-btn">
+                            <i class="fas fa-male"></i>
+                            مجموعة الأولاد - ثانية ثانوي
                         </a>
-                    </div>
-                    <div class="resource-item">
-                        <div>
-                            <h4>الهندسة التحليلية - الدوائر</h4>
-                            <p>معادلات الدوائر والقطع المخروطي</p>
-                        </div>
-                        <a href="#" class="download-btn">
-                            <i class="fas fa-download"></i> تحميل
-                        </a>
-                    </div>
-                    <div class="resource-item">
-                        <div>
-                            <h4>الاحتمالات والإحصاء</h4>
-                            <p>قوانين الاحتمالات والتوزيعات</p>
-                        </div>
-                        <a href="#" class="download-btn">
-                            <i class="fas fa-download"></i> تحميل
-                        </a>
-                    </div>
-                    <div class="resource-item">
-                        <div>
-                            <h4>تمارين متقدمة - التفاضل</h4>
-                            <p>تمارين صعبة مع الحلول التفصيلية</p>
-                        </div>
-                        <a href="#" class="download-btn">
-                            <i class="fas fa-download"></i> تحميل
-                        </a>
-                    </div>
-                    <div class="resource-item">
-                        <div>
-                            <h4>مراجعة شاملة - نهاية العام</h4>
-                            <p>مراجعة لجميع مواضيع السنة</p>
-                        </div>
-                        <a href="#" class="download-btn">
-                            <i class="fas fa-download"></i> تحميل
+                        <a href="https://wa.me/966501234567" target="_blank" class="year-group-btn">
+                            <i class="fas fa-female"></i>
+                            مجموعة البنات - ثانية ثانوي
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- WhatsApp Groups -->
-            <div class="whatsapp-groups">
-                <h2><i class="fab fa-whatsapp"></i> مجموعات الواتساب</h2>
-                <p>انضم إلى مجموعة صفك للتواصل مع زملائك والحصول على آخر التحديثات</p>
-                <div class="group-buttons">
-                    <a href="https://wa.me/966501234567" target="_blank" class="group-btn">
-                        <i class="fas fa-male"></i>
-                        مجموعة الأولاد
-                    </a>
-                    <a href="https://wa.me/966501234567" target="_blank" class="group-btn">
-                        <i class="fas fa-female"></i>
-                        مجموعة البنات
-                    </a>
-                </div>
-            </div>
+            <!-- Subjects Accordion -->
+            <div class="accordion-container">
+                <!-- Pure Mathematics Section -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3><i class="fas fa-calculator"></i> الرياضة البحتة</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <!-- Algebra Subsection -->
+                        <div class="branch-accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3><i class="fas fa-function"></i> الجبر</h3>
+                                    <i class="fas fa-chevron-down accordion-icon"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="subject-content-single">
+                                        <div class="resources-card">
+                                            <h4><i class="fas fa-download"></i> المراجع والملخصات</h4>
+                                            <div class="resource-item">
+                                                <div>
+                                                    <h5>ملخص الجبر المتقدم</h5>
+                                                    <p>قوانين الدوال والمعادلات</p>
+                                                </div>
+                                                <a href="#" class="download-btn">
+                                                    <i class="fas fa-download"></i> تحميل
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
 
-            <!-- Announcements -->
-            <div class="announcements">
-                <h2><i class="fas fa-bullhorn"></i> الإعلانات المهمة</h2>
-                <div class="announcement-item">
-                    <div class="announcement-date">20 ديسمبر 2024</div>
-                    <h4>امتحان التفاضل والتكامل</h4>
-                    <p>سيتم عقد امتحان التفاضل والتكامل يوم الثلاثاء القادم. تأكدوا من مراجعة جميع القوانين والتمارين.</p>
+                                    <!-- Video Lessons Accordion -->
+                                    <div class="video-lessons-accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <h4><i class="fas fa-play-circle"></i> دروس الفيديو</h4>
+                                                <i class="fas fa-chevron-down accordion-icon"></i>
+                                            </div>
+                                            <div class="accordion-content">
+                                                <div class="video-grid">
+                                                    <div class="video-item">
+                                                        <h5>الدوال المتقدمة</h5>
+                                                        <p>شرح الدوال الجبرية المتقدمة</p>
+                                                        <div class="video-container-small">
+                                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                    <div class="video-item">
+                                                        <h5>المعادلات الجبرية المعقدة</h5>
+                                                        <p>حل المعادلات الجبرية المتقدمة</p>
+                                                        <div class="video-container-small">
+                                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Differentiation Subsection -->
+                        <div class="branch-accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3><i class="fas fa-chart-line"></i> التفاضل</h3>
+                                    <i class="fas fa-chevron-down accordion-icon"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="subject-content-single">
+                                        <div class="resources-card">
+                                            <h4><i class="fas fa-download"></i> المراجع والملخصات</h4>
+                                            <div class="resource-item">
+                                                <div>
+                                                    <h5>ملخص التفاضل والتكامل</h5>
+                                                    <p>قوانين التفاضل والتكامل الأساسية</p>
+                                                </div>
+                                                <a href="#" class="download-btn">
+                                                    <i class="fas fa-download"></i> تحميل
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Video Lessons Accordion -->
+                                    <div class="video-lessons-accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <h4><i class="fas fa-play-circle"></i> دروس الفيديو</h4>
+                                                <i class="fas fa-chevron-down accordion-icon"></i>
+                                            </div>
+                                            <div class="accordion-content">
+                                                <div class="video-grid">
+                                                    <div class="video-item">
+                                                        <h5>قوانين التفاضل الأساسية</h5>
+                                                        <p>شرح قوانين التفاضل مع أمثلة تطبيقية</p>
+                                                        <div class="video-container-small">
+                                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                    <div class="video-item">
+                                                        <h5>التفاضل المتقدم</h5>
+                                                        <p>التفاضل الضمني والتطبيقات</p>
+                                                        <div class="video-container-small">
+                                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trigonometry Subsection -->
+                        <div class="branch-accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3><i class="fas fa-chart-pie"></i> حساب المثلثات</h3>
+                                    <i class="fas fa-chevron-down accordion-icon"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="subject-content-single">
+                                        <div class="resources-card">
+                                            <h4><i class="fas fa-download"></i> المراجع والملخصات</h4>
+                                            <div class="resource-item">
+                                                <div>
+                                                    <h5>ملخص حساب المثلثات المتقدم</h5>
+                                                    <p>قوانين النسب المثلثية المتقدمة</p>
+                                                </div>
+                                                <a href="#" class="download-btn">
+                                                    <i class="fas fa-download"></i> تحميل
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Video Lessons Accordion -->
+                                    <div class="video-lessons-accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <h4><i class="fas fa-play-circle"></i> دروس الفيديو</h4>
+                                                <i class="fas fa-chevron-down accordion-icon"></i>
+                                            </div>
+                                            <div class="accordion-content">
+                                                <div class="video-grid">
+                                                    <div class="video-item">
+                                                        <h5>النسب المثلثية المتقدمة</h5>
+                                                        <p>شرح النسب المثلثية المتقدمة</p>
+                                                        <div class="video-container-small">
+                                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                    <div class="video-item">
+                                                        <h5>قوانين حساب المثلثات</h5>
+                                                        <p>جميع القوانين المهمة</p>
+                                                        <div class="video-container-small">
+                                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="announcement-item">
-                    <div class="announcement-date">18 ديسمبر 2024</div>
-                    <h4>ورشة عمل إضافية</h4>
-                    <p>سيتم عقد ورشة عمل إضافية يوم السبت لحل التمارين الصعبة في الهندسة التحليلية.</p>
-                </div>
-                <div class="announcement-item">
-                    <div class="announcement-date">12 ديسمبر 2024</div>
-                    <h4>تحديث المراجع</h4>
-                    <p>تم إضافة مراجع جديدة للاحتمالات والإحصاء. يمكنكم تحميلها من قسم المراجع.</p>
+
+                <!-- Applied Mathematics Section -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3><i class="fas fa-cogs"></i> الرياضة التطبيقية</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <!-- Statistics & Probability Subsection -->
+                        <div class="branch-accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3><i class="fas fa-chart-bar"></i> الإحصاء والاحتمالات</h3>
+                                    <i class="fas fa-chevron-down accordion-icon"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="subject-content-single">
+                                        <div class="resources-card">
+                                            <h4><i class="fas fa-download"></i> المراجع والملخصات</h4>
+                                            <div class="resource-item">
+                                                <div>
+                                                    <h5>ملخص الإحصاء والاحتمالات</h5>
+                                                    <p>قوانين الاحتمالات والتوزيعات</p>
+                                                </div>
+                                                <a href="#" class="download-btn">
+                                                    <i class="fas fa-download"></i> تحميل
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Video Lessons Accordion -->
+                                    <div class="video-lessons-accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <h4><i class="fas fa-play-circle"></i> دروس الفيديو</h4>
+                                                <i class="fas fa-chevron-down accordion-icon"></i>
+                                            </div>
+                                            <div class="accordion-content">
+                                                <div class="video-grid">
+                                                    <div class="video-item">
+                                                        <h5>قوانين الاحتمالات</h5>
+                                                        <p>شرح قوانين الاحتمالات الأساسية</p>
+                                                        <div class="video-container-small">
+                                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                    <div class="video-item">
+                                                        <h5>التوزيعات الاحتمالية</h5>
+                                                        <p>التوزيع الطبيعي والتوزيعات الأخرى</p>
+                                                        <div class="video-container-small">
+                                                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -186,7 +362,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>أستاذ الرياضيات</h3>
+                    <h3>أستاذ احمد جمعه</h3>
                     <p>نلتزم بتقديم أفضل تعليم في الرياضيات لطلاب المرحلة الثانوية</p>
                 </div>
                 <div class="footer-section">
@@ -218,14 +394,14 @@
         <div class="creator-content">
             <div class="creator-title">
                 <i class="fas fa-code"></i>
-                تم تصميم وتطوير الموقع بواسطة
+                Website developed by
             </div>
             <div class="creator-name">
-                أسامة أحمد جمعة
+                Eng.Osama Ahmed Gomaa
                 <span class="creator-icon">✨</span>
             </div>
             <div class="creator-description">
-                مطور ويب متخصص في إنشاء مواقع تعليمية تفاعلية ومتجاوبة
+                Web Developer specialized in creating interactive and responsive educational websites
             </div>
             <div class="creator-badges">
                 <span class="creator-badge">Web Developer</span>

@@ -51,16 +51,17 @@
     <!-- Grade Content -->
     <section class="grade-content">
         <div class="container">
-            <!-- Schedule and Resources -->
-            <div class="content-grid">
-                <div class="schedule-card">
-                    <h2><i class="fas fa-calendar-alt"></i> الجدول الأسبوعي</h2>
+            <!-- Global Schedule -->
+            <div class="global-schedule">
+                <h2><i class="fas fa-calendar-alt"></i> الجدول الأسبوعي</h2>
+                <div class="global-schedule-content">
                     <table class="schedule-table">
                         <thead>
                             <tr>
                                 <th>اليوم</th>
                                 <th>الوقت</th>
                                 <th>المادة</th>
+                                <th>الموضوع</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -68,105 +69,234 @@
                                 <td>الأحد</td>
                                 <td>9:00 - 10:30</td>
                                 <td>الجبر</td>
+                                <td>المعادلات الخطية</td>
                             </tr>
                             <tr>
                                 <td>الاثنين</td>
                                 <td>10:00 - 11:30</td>
                                 <td>الهندسة</td>
+                                <td>الأشكال الهندسية</td>
                             </tr>
                             <tr>
                                 <td>الثلاثاء</td>
                                 <td>9:30 - 11:00</td>
-                                <td>الإحصاء</td>
+                                <td>الجبر</td>
+                                <td>المعادلات التربيعية</td>
                             </tr>
                             <tr>
                                 <td>الأربعاء</td>
                                 <td>10:30 - 12:00</td>
-                                <td>مراجعة</td>
+                                <td>حساب المثلثات</td>
+                                <td>النسب المثلثية</td>
                             </tr>
                             <tr>
                                 <td>الخميس</td>
                                 <td>9:00 - 10:30</td>
-                                <td>حل تمارين</td>
+                                <td>الهندسة</td>
+                                <td>المساحات والمحيطات</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+            </div>
 
-                <div class="resources-card">
-                    <h2><i class="fas fa-download"></i> المراجع والملخصات</h2>
-                    <div class="resource-item">
-                        <div>
-                            <h4>ملخص الجبر - الفصل الأول</h4>
-                            <p>ملخص شامل لجميع قوانين الجبر</p>
-                        </div>
-                        <a href="#" class="download-btn">
-                            <i class="fas fa-download"></i> تحميل
+            <!-- Year-Level WhatsApp Groups -->
+            <div class="year-whatsapp-groups">
+                <h2><i class="fab fa-whatsapp"></i> مجموعات الواتساب للسنة</h2>
+                <div class="year-whatsapp-content">
+                    <p>انضم إلى مجموعات الواتساب الخاصة بطلاب أولى ثانوي</p>
+                    <div class="year-group-buttons">
+                        <a href="https://wa.me/966501234567" target="_blank" class="year-group-btn">
+                            <i class="fas fa-male"></i>
+                            مجموعة الأولاد - أولى ثانوي
                         </a>
-                    </div>
-                    <div class="resource-item">
-                        <div>
-                            <h4>ملخص الهندسة - الأشكال الهندسية</h4>
-                            <p>قوانين المساحات والمحيطات</p>
-                        </div>
-                        <a href="#" class="download-btn">
-                            <i class="fas fa-download"></i> تحميل
-                        </a>
-                    </div>
-                    <div class="resource-item">
-                        <div>
-                            <h4>تمارين محلولة - الإحصاء</h4>
-                            <p>مجموعة تمارين مع الحلول</p>
-                        </div>
-                        <a href="#" class="download-btn">
-                            <i class="fas fa-download"></i> تحميل
-                        </a>
-                    </div>
-                    <div class="resource-item">
-                        <div>
-                            <h4>مراجعة شاملة - نهاية الفصل</h4>
-                            <p>مراجعة لجميع مواضيع الفصل</p>
-                        </div>
-                        <a href="#" class="download-btn">
-                            <i class="fas fa-download"></i> تحميل
+                        <a href="https://wa.me/966501234567" target="_blank" class="year-group-btn">
+                            <i class="fas fa-female"></i>
+                            مجموعة البنات - أولى ثانوي
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- WhatsApp Groups -->
-            <div class="whatsapp-groups">
-                <h2><i class="fab fa-whatsapp"></i> مجموعات الواتساب</h2>
-                <p>انضم إلى مجموعة صفك للتواصل مع زملائك والحصول على آخر التحديثات</p>
-                <div class="group-buttons">
-                    <a href="https://wa.me/966501234567" target="_blank" class="group-btn">
-                        <i class="fas fa-male"></i>
-                        مجموعة الأولاد
-                    </a>
-                    <a href="https://wa.me/966501234567" target="_blank" class="group-btn">
-                        <i class="fas fa-female"></i>
-                        مجموعة البنات
-                    </a>
-                </div>
-            </div>
+            <!-- Subjects Accordion -->
+            <div class="accordion-container">
+                <!-- Algebra Section -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3><i class="fas fa-calculator"></i> الجبر</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="subject-content-single">
+                            <div class="resources-card">
+                                <h4><i class="fas fa-download"></i> المراجع والملخصات</h4>
+                                <div class="resource-item">
+                                    <div>
+                                        <h5>ملخص الجبر - الفصل الأول</h5>
+                                        <p>ملخص شامل لجميع قوانين الجبر</p>
+                                    </div>
+                                    <a href="#" class="download-btn">
+                                        <i class="fas fa-download"></i> تحميل
+                                    </a>
+                                </div>
+                                <div class="resource-item">
+                                    <div>
+                                        <h5>تمارين محلولة - المعادلات</h5>
+                                        <p>مجموعة تمارين مع الحلول التفصيلية</p>
+                                    </div>
+                                    <a href="#" class="download-btn">
+                                        <i class="fas fa-download"></i> تحميل
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- Announcements -->
-            <div class="announcements">
-                <h2><i class="fas fa-bullhorn"></i> الإعلانات المهمة</h2>
-                <div class="announcement-item">
-                    <div class="announcement-date">15 ديسمبر 2024</div>
-                    <h4>امتحان الفصل الأول</h4>
-                    <p>سيتم عقد امتحان الفصل الأول يوم الأحد القادم. يرجى المراجعة الجيدة والاستعداد للامتحان.</p>
+                        <!-- Video Lessons Accordion -->
+                        <div class="video-lessons-accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4><i class="fas fa-play-circle"></i> دروس الفيديو</h4>
+                                    <i class="fas fa-chevron-down accordion-icon"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="video-grid">
+                                        <div class="video-item">
+                                            <h5>المعادلات الخطية - الجزء الأول</h5>
+                                            <p>شرح مفصل للمعادلات الخطية مع أمثلة تطبيقية</p>
+                                            <div class="video-container-small">
+                                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="video-item">
+                                            <h5>المعادلات الخطية - الجزء الثاني</h5>
+                                            <p>حل المعادلات الخطية المعقدة والتمارين</p>
+                                            <div class="video-container-small">
+                                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="video-item">
+                                            <h5>تمارين محلولة - المعادلات</h5>
+                                            <p>مجموعة من التمارين المحلولة خطوة بخطوة</p>
+                                            <div class="video-container-small">
+                                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="announcement-item">
-                    <div class="announcement-date">10 ديسمبر 2024</div>
-                    <h4>تحديث الجدول الأسبوعي</h4>
-                    <p>تم تحديث الجدول الأسبوعي ليتضمن حصص إضافية للمراجعة قبل الامتحانات.</p>
+
+                <!-- Trigonometry Section -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3><i class="fas fa-chart-line"></i> حساب المثلثات</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="subject-content-single">
+                            <div class="resources-card">
+                                <h4><i class="fas fa-download"></i> المراجع والملخصات</h4>
+                                <div class="resource-item">
+                                    <div>
+                                        <h5>ملخص حساب المثلثات</h5>
+                                        <p>جميع القوانين والنسب المثلثية</p>
+                                    </div>
+                                    <a href="#" class="download-btn">
+                                        <i class="fas fa-download"></i> تحميل
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video Lessons Accordion -->
+                        <div class="video-lessons-accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4><i class="fas fa-play-circle"></i> دروس الفيديو</h4>
+                                    <i class="fas fa-chevron-down accordion-icon"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="video-grid">
+                                        <div class="video-item">
+                                            <h5>النسب المثلثية الأساسية</h5>
+                                            <p>شرح النسب المثلثية الأساسية مع أمثلة</p>
+                                            <div class="video-container-small">
+                                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="video-item">
+                                            <h5>قوانين حساب المثلثات</h5>
+                                            <p>جميع القوانين المهمة في حساب المثلثات</p>
+                                            <div class="video-container-small">
+                                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="announcement-item">
-                    <div class="announcement-date">5 ديسمبر 2024</div>
-                    <h4>ملخصات جديدة متاحة</h4>
-                    <p>تم رفع ملخصات جديدة لجميع فصول الرياضيات. يمكنكم تحميلها من قسم المراجع.</p>
+
+                <!-- Geometry Section -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3><i class="fas fa-shapes"></i> الهندسة</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="subject-content-single">
+                            <div class="resources-card">
+                                <h4><i class="fas fa-download"></i> المراجع والملخصات</h4>
+                                <div class="resource-item">
+                                    <div>
+                                        <h5>ملخص الهندسة - الأشكال الهندسية</h5>
+                                        <p>قوانين المساحات والمحيطات</p>
+                                    </div>
+                                    <a href="#" class="download-btn">
+                                        <i class="fas fa-download"></i> تحميل
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video Lessons Accordion -->
+                        <div class="video-lessons-accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h4><i class="fas fa-play-circle"></i> دروس الفيديو</h4>
+                                    <i class="fas fa-chevron-down accordion-icon"></i>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="video-grid">
+                                        <div class="video-item">
+                                            <h5>الأشكال الهندسية الأساسية</h5>
+                                            <p>شرح المربع والمستطيل والمثلث والدائرة</p>
+                                            <div class="video-container-small">
+                                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="video-item">
+                                            <h5>قوانين المساحات والمحيطات</h5>
+                                            <p>جميع القوانين المهمة لحساب المساحات والمحيطات</p>
+                                            <div class="video-container-small">
+                                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        <div class="video-item">
+                                            <h5>تمارين محلولة - الهندسة</h5>
+                                            <p>مجموعة من التمارين المحلولة في الهندسة</p>
+                                            <div class="video-container-small">
+                                                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -199,7 +329,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 أستاذ الرياضيات. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2024 أستاذ احمد جمعه جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
@@ -209,14 +339,14 @@
         <div class="creator-content">
             <div class="creator-title">
                 <i class="fas fa-code"></i>
-                تم تصميم وتطوير الموقع بواسطة
+                Website developed by
             </div>
             <div class="creator-name">
-                أسامة أحمد جمعة
+                Eng.Osama Ahmed Gomaa
                 <span class="creator-icon">✨</span>
             </div>
             <div class="creator-description">
-                مطور ويب متخصص في إنشاء مواقع تعليمية تفاعلية ومتجاوبة
+                Web Developer specialized in creating interactive and responsive educational websites
             </div>
             <div class="creator-badges">
                 <span class="creator-badge">Web Developer</span>
