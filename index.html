@@ -10,47 +10,55 @@
   <style>
     body {
       font-family: "Cairo", sans-serif;
-      text-align: center;
-      padding: 50px;
       background: linear-gradient(135deg, #f0f4f7, #d9e4ec);
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;     /* يظبطه في النص بالطول */
+      justify-content: center; /* يظبطه في النص بالعرض */
     }
     .login-box {
       background: #fff;
-      padding: 30px 40px;
+      padding: 40px 30px;
       border-radius: 20px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      display: inline-block;
-      min-width: 300px;
+      width: 100%;           /* عشان الموبايل */
+      max-width: 500px;     /* الحد الأقصى على الشاشات الكبيرة */
       animation: fadeIn 0.7s ease-in-out;
+      text-align: center;
     }
     .login-box h2 {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       font-weight: 600;
       color: #333;
+      font-size: 26px;
     }
     input {
-      padding: 12px;
-      margin: 10px 0;
+      padding: 18px;
+      margin: 15px 0;
       border: 1px solid #ccc;
-      border-radius: 8px;
-      width: 90%;
-      font-size: 16px;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 18px;
       outline: none;
       transition: border 0.3s;
+      box-sizing: border-box;
     }
     input:focus {
       border: 1px solid #28a745;
-      box-shadow: 0 0 5px rgba(40,167,69,0.3);
+      box-shadow: 0 0 6px rgba(40,167,69,0.3);
     }
     button {
-      padding: 12px 25px;
+      padding: 16px;
       background: #28a745;
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
+      font-weight: bold;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       cursor: pointer;
-      margin-top: 15px;
+      margin-top: 20px;
+      width: 100%;
       transition: background 0.3s;
     }
     button:hover {
@@ -63,7 +71,6 @@
     }
   </style>
 </head>
-<link rel="shortcut icon" href="images/calculating.png" type="image/x-icon">
 <body>
   <div class="login-box">
     <h2>🔒 تسجيل الدخول</h2>
@@ -82,7 +89,7 @@
           showConfirmButton: false,
           timer: 1500
         }).then(() => {
-          window.location.href = "home.html";
+          window.location.href = "index.html";
         });
       } else {
         Swal.fire({
